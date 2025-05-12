@@ -1,0 +1,44 @@
+#!/bin/bash
+echo updateing all 
+sudo apt update -y 
+sudo apt-get install gcc g++ -y 
+echo checking installed versions: 
+gcc --version 
+g++ --version 
+echo Installing... libjason-c-dev and libcurl14-openssl-dev..
+sudo apt-get install libjson-c-dev 
+sudo apt-get install libcurl4-openssl-dev
+echo Done.. 
+echo gcc makeing project now..
+echo make al.c
+gcc al.c  -o al -lcurl -lm 
+echo make cl.c
+gcc cl.c  -o cl
+echo make de.c 
+gcc de.c  -o de
+echo make dl.c  
+gcc dl.c -o dl
+echo make fs.c
+gcc fs.c -o fs
+echo make me.c
+gcc me.c -o me
+echo make oz.c
+gcc oz.c -o oz -lm -lcurl
+echo make dk.c  
+gcc dk.c -o dk -lm -lcurl
+echo make ix.c 
+gcc ix.c -o ix -lm -lcurl -ljson-c
+echo make iy.c
+gcc iy.c -o iy -lm -lcurl -ljson-c
+echo make tu.c 
+gcc tu.c -o tu -lm -lcurl
+echo make pc.c
+gcc pc.c -o pc
+echo make pl.c
+gcc pl.c -o pl
+echo make pt.c 
+gcc pt.c -o pt -lm -lcurl
+echo make up.c 
+gcc up.c -o up
+echo Finished makeing project. Done.. 
+
